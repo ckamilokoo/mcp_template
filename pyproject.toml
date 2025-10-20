@@ -1,0 +1,11 @@
+[project]
+name = "mcp-db"
+version = "0.1.0"
+description = "MCP server for database operations"
+dependencies = [
+    "fastmcp>=0.1.0",
+    "psycopg2-binary>=2.9.10",
+    "httpx-sse>=0.4.0",
+    "python-dotenv>=1.0.0",
+    "fastapi",
+]

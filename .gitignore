@@ -1,0 +1,69 @@
+# Proyecto MCP (Python + Docker + SSE)
+# Ajustado para este repositorio
+
+# --- Archivos del sistema operativo ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# --- Python: artefactos generados ---
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+
+# --- Construcción y empaquetado ---
+build/
+dist/
+wheels/
+*.egg-info/
+*.egg
+*.whl
+
+# --- Entornos virtuales ---
+.venv/
+.venv_new/
+
+# --- Herramientas y cachés ---
+.pytest_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# --- IDE/Editor ---
+.vscode/
+.idea/
+
+# --- Logs y temporales ---
+*.log
+logs/
+*.tmp
+*.bak
+
+# --- Variables de entorno ---
+# Mantener .env fuera del control de versión; sí comitear .env.example
+.env
+!.env.example
+
+# --- Docker ---
+# Usamos volúmenes nombrados en docker-compose; no hay directorios locales de datos que ignorar.
+# Si más adelante se usa un bind mount para datos de Postgres, descomentar:
+# pgdata/
+# data/
+
+# --- MCP server/client ---
+# No se generan binarios; si se guardan transcripciones de sesiones del cliente, ignorar carpeta:
+# sessions/
+
+# --- Control de versión de Python ---
+# .python-version DEBE permanecer versionado para fijar la versión de Python
+# (no lo ignoramos)
+
+# --- Herramientas opcionales ---
+# Si se incluyen utilidades web/docs que instalen paquetes, ignorar node_modules (opcional):
+# node_modules/
+
+# --- Bloqueos de dependencias ---
+# uv.lock debe permanecer versionado para reproducibilidad
+# (no lo ignoramos)
